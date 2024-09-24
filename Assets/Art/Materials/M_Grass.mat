@@ -41,10 +41,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Distance: 0.75
+    - _MaxIntDis: 0.75
     - _QueueControl: 0
     - _QueueOffset: 0
     - _VerIntensity: 0.25
     m_Colors:
+    - _GrassPos: {r: 0, g: 0, b: 0, a: 0}
+    - _PlayerPos: {r: 1, g: 1, b: 1, a: 0}
     - _VerOffset: {r: 0.05, g: 0, b: 0, a: 0}
     - _VerTiling: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []

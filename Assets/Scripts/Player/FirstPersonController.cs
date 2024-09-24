@@ -35,11 +35,18 @@ public class FirstPersonController : MonoBehaviour
         Cursor.visible = false;
 
         _rb = GetComponent<Rigidbody>();
-        _rb.constraints = RigidbodyConstraints.FreezeRotation;
+        _rb.constraints = RigidbodyConstraints.FreezeRotation;        
     }
 
     private void Start()
     {
+        if (!GameManager.Instance)
+        {
+            Debug.LogError($"No GameManager found on scene.");
+        }
+
+        GameManager.Instance.Player = this;
+
         _camera = Camera.main;
 
         _camControl = Camera.main.GetComponent<FirstPersonCamera>();
@@ -59,6 +66,11 @@ public class FirstPersonController : MonoBehaviour
         if (_inputMouseX != 0 || _inputMouseY != 0)
         {
             Rotation(_inputMouseX, _inputMouseY);
+        }
+
+        if (Input.GetKeyDown(_interactKey))
+        {
+            Interact();
         }
     }
 
