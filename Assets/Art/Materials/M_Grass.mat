@@ -43,10 +43,10 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _VerIntensity: 0.125
+    - _VerIntensity: 0.25
     m_Colors:
-    - _VerOffset: {r: 0.25, g: 0, b: 0, a: 0}
-    - _VerTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _VerOffset: {r: 0.05, g: 0, b: 0, a: 0}
+    - _VerTiling: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &875873915671578511
 MonoBehaviour:
