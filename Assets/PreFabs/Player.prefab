@@ -133,7 +133,7 @@ MonoBehaviour:
   _mouseSensitivity: 300
   _intMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2147483648
   _intRayDist: 2
   _movMask:
     serializedVersion: 2
