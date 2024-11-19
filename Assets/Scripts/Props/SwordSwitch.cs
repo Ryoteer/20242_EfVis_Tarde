@@ -25,6 +25,11 @@ public class SwordSwitch : MonoBehaviour
         _swordVfx.SetVector4("GeneralColor", _actualColor);
     }
 
+    public void SendEvent(string eventName)
+    {
+        _swordVfx.SendEvent(eventName);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
